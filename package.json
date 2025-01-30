@@ -1,0 +1,19 @@
+{
+  "name": "nature-platter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx @tailwindcss/cli -i ./src/input.css -o ./style.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.0.1",
+    "tailwindcss": "^4.0.1"
+  },
+  "devDependencies": {
+    "daisyui": "^5.0.0-beta.5"
+  }
+}

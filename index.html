@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html data-theme="light" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nature's Platter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .font-sora {
+        font-family: "Sora", serif;
+      }
+    </style>
+  </head>
+  <body class="font-sora">
+    <!-- Header -->
+    <header class="bg-linear-to-b mb-4 from-white to-[#EFEBE3]">
+      <!-- Navbar -->
+      <nav class="navbar shadow-sm shadow-[#17980090] px-3 py-4">
+        <div class="navbar-start">
+          <a class="btn btn-ghost text-xl"><img src="./images/logo.png" alt="logo"></a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Item 1</a></li>
+            <li><a>Item 2</a></li>
+            <li><a>Item 3</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end hidden lg:block">
+          <a class="btn">Button</a>
+        </div>
+        <div class="dropdown dropdown-bottom dropdown-end navbar-end">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block text-[#179800] h-8 w-8 text-2xl stroke-current"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path> </svg>
+          </div>
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-56 p-6 pr-9 shadow">
+            <li><a href="#product" class="text-lg">Product</a></li>
+            <li><a href="#services" class="text-lg">Services</a></li>
+            <li><a href="#contact" class="text-lg">Contact us</a></li>
+            <li class="grid grid-cols-3 place-content-center my-2">
+              <a class="mx-auto"><img src="./images/search.png" alt=""></a>
+              <a class="mx-auto"><img src="./images/shop.png" alt=""></a>
+            </li>
+            <li><a class="btn mb-2">Login</a></li>
+            <li><a class="btn bg-[#179800] text-white">Regester</a></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Hero content -->
+      <div class="hero">
+        <div class="hero-content text-center">
+          <div class="max-w-md">
+            <!-- <h1 class="text-5xl font-bold">Hello there</h1> -->
+            <h1 class="text-4xl px-10 font-semibold">Freshness <span class="text-[#179800]">You Can Count</span> On, Prices You’ll Love!</h1>
+            <p class="font-light px-8 text-lg py-6">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
+          </div>
+        </div>
+      </div>
+      <!-- Hero bg -->
+      <div>
+        <img class=""src="./images/hero-vegetables.png" alt="">
+      </div>
+    </header>
+    <!-- Main -->
+    <main>
+      <!-- Services Section -->
+      <section class="py-12">
+        <h2 class="text-2xl font-semibold w-md mx-auto pb-8 text-[#179800]">Services</h2>
+        <div class="flex flex-col gap-5">
+          <div class="card bg-[#EFEBE3] w-md shadow-sm mx-auto py-7">
+            <figure>
+              <img
+                src="/images/service.png"
+                alt="Shoes" />
+            </figure>
+            <div class="card-body text-center">
+              <h2 class="text-xl font-semibold">24/7 Services</h2>
+              <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+            </div>
+          </div>
+          <div class="card bg-[#EFEBE3] w-md shadow-sm mx-auto py-7">
+            <figure>
+              <img
+                class="scale-125"
+                src="/images/delivery.png"
+                alt="Shoes" />
+            </figure>
+            <div class="card-body text-center">
+              <h2 class="text-xl font-semibold">Fast Delivery</h2>
+              <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+            </div>
+          </div>
+          <div class="card bg-[#EFEBE3] w-md shadow-sm mx-auto py-7">
+            <figure>
+              <img
+                src="/images/healthy.png"
+                alt="Shoes" />
+            </figure>
+            <div class="card-body text-center">
+              <h2 class="text-xl font-semibold">Healthy Products </h2>
+              <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Products Section -->
+      <section class="bg-[#EFEBE3] py-12">
+        <h2 class="text-2xl font-semibold w-md mx-auto pb-8 text-[#179800]">Popular Products</h2>
+        <div class="w-md mx-auto">
+          <div class="w-md h-[400px] px-6 py-12 bg-linear-to-br from-[#21d301] from-40% to-green-100 rounded-xl relative">
+            <div>
+              <h3 class="text-base-200 text-3xl font-semibold">30% off</h3>
+              <p class="py-4 text-lg text-gray-700">Discover a world of treats, toys and essentials handpicked for</p>
+              <button class="btn px-8 text-gray-800 text-lg">Buy Now</button>
+            </div>
+            <img class="absolute bottom-0 w-72 right-0" src="./images/vegetable-offer.png" alt="">
+          </div>
+          <div class="grid pt-5 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 sm:px-4 gap-4">
+            <div class="flex w-md sm:w-72 bg-white rounded-lg p-2">
+              <div class="bg-[#EFEBE3] rounded-md">
+                <img class="w-20 p-2" src="./images/list-2.png" alt="list-1">
+              </div>
+              <div class="pl-6">
+                <p>⭐ 4.5</p>
+                <h5 class="font-semibold text-lg">Onion 1kg</h5>
+                <p class="font-medium">$40.00</p>
+              </div>
+            </div>
+            <div class="flex w-md sm:w-72 bg-white rounded-lg p-2">
+              <div class="bg-[#EFEBE3] rounded-md">
+                <img class="w-20 p-2" src="./images/list-1.png" alt="list-1">
+              </div>
+              <div class="pl-6">
+                <p>⭐ 4.5</p>
+                <h5 class="font-semibold text-lg">Tomato 500gm</h5>
+                <p class="font-medium">$40.00</p>
+              </div>
+            </div>
+            <div class="flex w-md sm:w-72 bg-white rounded-lg p-2">
+              <div class="bg-[#EFEBE3] rounded-md">
+                <img class="w-20 p-2" src="./images/list-3.png" alt="list-1">
+              </div>
+              <div class="pl-6">
+                <p>⭐ 4.5</p>
+                <h5 class="font-semibold text-lg">Potato 1kg</h5>
+                <p class="font-medium">$40.00</p>
+              </div>
+            </div>
+            <div class="flex w-md sm:w-72 bg-white rounded-lg p-2">
+              <div class="bg-[#EFEBE3] rounded-md">
+                <img class="w-20 p-2" src="./images/list-2.png" alt="list-1">
+              </div>
+              <div class="pl-6">
+                <p>⭐ 4.5</p>
+                <h5 class="font-semibold text-lg">Onion 1kg</h5>
+                <p class="font-medium">$40.00</p>
+              </div>
+            </div>
+            <div class="flex w-md sm:w-72 bg-white rounded-lg p-2">
+              <div class="bg-[#EFEBE3] rounded-md">
+                <img class="w-20 p-2" src="./images/list-1.png" alt="list-1">
+              </div>
+              <div class="pl-6">
+                <p>⭐ 4.5</p>
+                <h5 class="font-semibold text-lg">Tomato 500gm</h5>
+                <p class="font-medium">$40.00</p>
+              </div>
+            </div>
+            <div class="flex w-md sm:w-72 bg-white rounded-lg p-2">
+              <div class="bg-[#EFEBE3] rounded-md">
+                <img class="w-20 p-2" src="./images/list-3.png" alt="list-1">
+              </div>
+              <div class="pl-6">
+                <p>⭐ 4.5</p>
+                <h5 class="font-semibold text-lg">Potato 1kg</h5>
+                <p class="font-medium">$40.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Offers Section -->
+      <section class="py-12">
+        <h2 class="text-2xl font-semibold w-md mx-auto pb-8 text-[#179800]">Arrival & Offers</h2>
+        <div class="flex flex-col gap-4">
+          <div class="w-md relative mx-auto bg-[#115414] p-4 rounded-2xl py-10 px-4">
+            <div>
+              <img class="w-44" src="./images/dawat-logo.png" alt="">
+            </div>
+            <div class="p-4">
+              <button class="btn shadow-none bg-[#63B76D] border-0 text-white font-normal tracking-wider">Cook Exotic Dishes</button>
+            </div>
+            <p class="text-base-100 text-2xl px-4">UP to <span class="font-bold">20% OFF</span></p>
+            <img class="absolute bottom-2 right-0 w-56" src="./images/dawat-mock-up.png" alt="product-1">
+          </div>
+          <div class="w-md relative mx-auto bg-[#102861] p-4 rounded-2xl py-8 px-4">
+            <div>
+              <img class="h-20 ml-4" src="./images/india-gate-logo.png" alt="">
+            </div>
+            <div class="p-4">
+              <button class="btn shadow-none bg-[#2A4D97] border-0 text-white font-normal tracking-wider">World’s No.1 Rice</button>
+            </div>
+            <p class="text-base-100 text-2xl px-4">UP to <span class="font-bold">40% OFF</span></p>
+            <img class="absolute bottom-0 right-8 w-32" src="./images/india-gate-mock-up.png" alt="product-1">
+          </div>
+        </div>
+      </section>
+      <!-- Contact Section -->
+      <section class="bg-linear-to-b from-white from-50% via-transparent to-[#179800] to-50%">
+        <div class="card bg-[#EFEBE3] w-md mx-auto shadow-sm">
+          <figure class="px-20 pt-10">
+            <img
+              src="./images/vegetable-busket.png"
+              alt="Shoes"
+              class="rounded-xl" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title text-2xl text-[#179800]">Get Grocery News!</h2>
+            <p class="text-xl">Exclusive training tips, ticks, product deals and more.</p>
+            <label class="floating-label">
+              <span>Enter email</span>
+              <input type="text" placeholder="Enter email...." class="input input-md w-90 mx-auto" />
+            </label>
+            <div class="card-actions">
+              <button class="btn text-white font-light tracking-widest bg-[#179800]">Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-[#179800]">
+      <div class="footer w-md mx-auto sm:footer-horizontal text text-white py-12">
+        <aside>
+          <img class="w-30" src="./images/logo-footer.png" alt="logo">
+          <p class="text-base opacity-80">
+            Discover a world of treats, toys, and essentials handpicked for your furry friends
+          </p>
+        </aside>
+        <nav>
+          <h6 class="footer-title">Navigations</h6>
+          <a class="link link-hover">Product</a>
+          <a class="link link-hover">Services</a>
+          <a class="link link-hover">Contact us</a>
+        </nav>
+        <nav>
+          <h6 class="footer-title">Follow Us</h6>
+          <ul class="flex gap-3">
+            <li><a href="#"><img src="./images/fb.png" alt=""></a></li>
+            <li><a href="#"><img src="./images/ins.png" alt=""></a></li>
+            <li><a href="#"><img src="./images/in.png" alt=""></a></li>
+            <li><a href="#"><img src="./images/yt.png" alt=""></a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
